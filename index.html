@@ -18,12 +18,12 @@
         .card {
             border-radius: 15px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            width: 40rem; /* Increased width */
+            width: 40rem;
             padding: 20px;
         }
         .card img {
             border-radius: 50%;
-            width: 200px; /* Larger image */
+            width: 200px;
             height: 200px;
             object-fit: cover;
             margin: -100px auto 20px;
@@ -56,15 +56,17 @@
         }
         .projects-gallery {
             display: flex;
-            overflow-x: auto;
+            overflow-x: scroll;
             gap: 15px;
             padding: 10px;
         }
         .projects-gallery img {
             border-radius: 10px;
-            height: 120px;
+            width: auto;
+            height: 150px; /* Consistent height for all images */
             object-fit: cover;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            flex-shrink: 0; /* Prevent images from shrinking */
         }
     </style>
 </head>
@@ -81,9 +83,9 @@
             <div class="projects-list">
                 <h2>Projects</h2>
                 <div class="projects-gallery">
-                    <img src="JWE2.jpg" alt="Project 1">
-                    <img src="PZ.jpg" alt="Project 2">
-                    <img src="project3.jpg" alt="Project 3">
+                    <img src="JWE2.jpg" alt="Project 1" class="img-fluid">
+                    <img src="PZ.jpg" alt="Project 2" class="img-fluid">
+                    <img src="JWE2.jpg" alt="Project 3" class="img-fluid">
                 </div>
             </div>
         </div>
@@ -93,5 +95,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
+
 
 
