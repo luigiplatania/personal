@@ -59,9 +59,7 @@
         }
         .projects-gallery {
             display: grid;
-            grid-template-columns: repeat(3, 1fr); /* Three columns in the first row */
-            grid-auto-rows: 1fr; /* All rows will have equal height */
-            gap: 15px; /* Adjust the gap between all items */
+            gap: 15px;
         }
         .projects-gallery img {
             border-radius: 10px;
@@ -70,10 +68,21 @@
             object-fit: cover;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
-        /* Custom gap between first and second row */
-        .projects-gallery img:nth-child(3) {
-            margin-bottom: 120px; /* Adjust this to control gap between rows */
+
+        /* Media query for desktop and iPad */
+        @media (min-width: 768px) {
+            .projects-gallery {
+                grid-template-columns: repeat(3, 1fr); /* Three columns on larger screens */
+            }
         }
+
+        /* Media query for mobile devices */
+        @media (max-width: 767px) {
+            .projects-gallery {
+                grid-template-columns: 1fr; /* One column on smaller screens */
+            }
+        }
+
     </style>
 </head>
 <body>
@@ -88,6 +97,7 @@
 
         <!-- Projects Section -->
         <div class="projects-list">
+            <h2>Projects</h2>
             <div class="projects-gallery">
                 <img src="JWE2.jpg" alt="Project 1" class="img-fluid">
                 <img src="PZ.jpg" alt="Project 2" class="img-fluid">
@@ -103,4 +113,5 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
+
 
