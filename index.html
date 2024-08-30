@@ -11,9 +11,9 @@
             background-color: #f8f9fa;
             display: flex;
             justify-content: center;
-            align-items: flex-start; /* Move content higher */
+            align-items: flex-start;
             height: 100vh;
-            padding-top: 80px; /* Add some padding to adjust the height */
+            padding-top: 80px;
             margin: 0;
         }
         .card {
@@ -31,6 +31,7 @@
         }
         .card-body {
             text-align: center;
+            margin-bottom: 30px; /* Add some space below the card body */
         }
         .card-title {
             font-size: 2.5rem;
@@ -62,7 +63,7 @@
         }
         .projects-gallery img {
             border-radius: 10px;
-            max-height: 150px; /* Adjust max height */
+            max-height: 150px;
             width: 100%;
             object-fit: cover;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -73,19 +74,18 @@
     <div class="card text-center">
         <div class="card-body">
             <img src="personalPicture.png" alt="Your Name" class="img-fluid">
-            <h1 class="card-title">Your Name</h1>
-            <p class="card-text">Title / Profession</p>
-            <p><a href="mailto:youremail@example.com">youremail@example.com</a></p>
+            <h1 class="card-title">Luigi Platania</h1>
+            <p class="card-text">Audio Programmer</p>
+            <p><a href="mailto:youremail@example.com">luigiplatania94@gmail.com</a></p>
             <p><a href="https://www.linkedin.com/in/yourprofile">LinkedIn</a> | <a href="https://github.com/yourprofile">GitHub</a></p>
+        </div>
 
-            <!-- Projects Section -->
-            <div class="projects-list">
-                <h2>Projects</h2>
-                <div class="projects-gallery">
-                    <img src="JWE2.jpg" alt="Project 1" class="img-fluid">
-                    <img src="PZ.jpg" alt="Project 2" class="img-fluid">
-                    <img src="JWE2.jpg" alt="Project 3" class="img-fluid">
-                </div>
+        <!-- Projects Section -->
+        <div class="projects-list">
+            <div class="projects-gallery">
+                <img src="JWE2.jpg" alt="Project 1" class="img-fluid">
+                <img src="PZ.jpg" alt="Project 2" class="img-fluid">
+                <img src="JWE2.jpg" alt="Project 3" class="img-fluid">
             </div>
         </div>
     </div>
