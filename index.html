@@ -60,7 +60,7 @@
         .projects-gallery {
             display: grid;
             gap: 15px;
-            grid-auto-rows: minmax(550px, auto);
+            grid-auto-rows: minmax(450px, auto);
         }
         .projects-gallery img {
             border-radius: 10px;
@@ -74,9 +74,10 @@
         @media (min-width: 768px) {
             .projects-gallery {
                 grid-template-columns: repeat(3, 1fr); /* Three columns on larger screens */
+                grid-auto-rows: minmax(250px, auto);
             }
             .projects-gallery img {
-            height: 150px;
+            height: 250px;
             }
         }
 
@@ -84,9 +85,10 @@
         @media (max-width: 767px) {
             .projects-gallery {
                 grid-template-columns: 1fr; /* One column on smaller screens */
+                grid-auto-rows: minmax(450px, auto);
             }
             .projects-gallery img {
-            height: 450px;
+            height: 350px;
             }
         }
 
