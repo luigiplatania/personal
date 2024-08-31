@@ -75,12 +75,18 @@
             .projects-gallery {
                 grid-template-columns: repeat(3, 1fr); /* Three columns on larger screens */
             }
+            .projects-gallery img {
+            height: 150px;
+            }
         }
 
         /* Media query for mobile devices */
         @media (max-width: 767px) {
             .projects-gallery {
                 grid-template-columns: 1fr; /* One column on smaller screens */
+            }
+            .projects-gallery img {
+            height: 450px;
             }
         }
 
