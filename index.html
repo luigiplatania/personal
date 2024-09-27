@@ -78,6 +78,7 @@
             height: 150px;
             object-fit: cover;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            position: relative;
         }
 
         /* Media query for desktop and iPad */
@@ -87,7 +88,7 @@
                 grid-auto-rows: minmax(250px, auto);
             }
             .projects-gallery img {
-            height: 250px;
+                height: 250px;
             }
         }
 
@@ -98,7 +99,7 @@
                 grid-auto-rows: minmax(350px, auto);
             }
             .projects-gallery img {
-            height: 350px;
+                height: 350px;
             }
         }
 
@@ -106,12 +107,21 @@
             position: relative;
         }
 
-        .badge-container .badge {
+        .badge-container img {
+            display: block;
+            width: 100%;
+        }
+
+        .badge {
             position: absolute;
-            top: 10px;
-            left: 10px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
             background-color: #0d6efd;
             color: white;
+            font-size: 1.2rem;
+            padding: 10px 15px;
+            border-radius: 10px;
         }
     </style>
 </head>
@@ -133,9 +143,18 @@
                     <img src="JWE2.jpg" alt="Project 1" class="img-fluid">
                     <span class="badge">C++</span>
                 </div>
-                <img src="PZ.jpg" alt="Project 2" class="img-fluid">
-                <img src="RoR.png" alt="Project 3" class="img-fluid">
-                <img src="TSW2.jpg" alt="Project 4" class="img-fluid">
+                <div class="badge-container">
+                    <img src="PZ.jpg" alt="Project 2" class="img-fluid">
+                    <span class="badge">C++</span>
+                </div>
+                <div class="badge-container">
+                    <img src="RoR.png" alt="Project 3" class="img-fluid">
+                    <span class="badge">C++</span>
+                </div>
+                <div class="badge-container">
+                    <img src="TSW2.jpg" alt="Project 4" class="img-fluid">
+                    <span class="badge">C++</span>
+                </div>
             </div>
         </div>
     </div>
@@ -144,6 +163,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
+
     
 
 
