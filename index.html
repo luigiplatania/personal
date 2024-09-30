@@ -81,6 +81,14 @@
             position: relative;
         }
 
+        .hover-effect {
+            transition: transform 0.3s ease;
+        }
+
+        .hover-effect:hover {
+            transform: scale(1.1);
+        }
+
         /* Media query for desktop and iPad */
         @media (min-width: 768px) {
             .projects-gallery {
@@ -144,20 +152,20 @@
             <div class="projects-gallery">
                 <div class="badge-container">
                     <a href="https://www.jurassicworldevolution2.com/" target="_blank">
-                        <img src="JWE2.jpg" alt="Project 1" class="img-fluid">
+                        <img src="JWE2.jpg" alt="Project 1" class="img-fluid hover-effect">
                     </a>
                     <span class="badge">PC, Xbox One, Xbox Series X/S, PS4, PS5</span>
                 </div>
                 <div class="badge-container">
-                    <img src="PZ.jpg" alt="Project 2" class="img-fluid">
+                    <img src="PZ.jpg" alt="Project 2" class="img-fluid hover-effect">
                     <span class="badge">PC</span>
                 </div>
                 <div class="badge-container">
-                    <img src="RoR.png" alt="Project 3" class="img-fluid">
+                    <img src="RoR.png" alt="Project 3" class="img-fluid hover-effect">
                     <span class="badge">PC, Xbox Series X/S, PS5</span>
                 </div>
                 <div class="badge-container">
-                    <img src="TSW2.jpg" alt="Project 4" class="img-fluid">
+                    <img src="TSW2.jpg" alt="Project 4" class="img-fluid hover-effect">
                     <span class="badge">PC, Xbox One, Xbox Series X/S, PS4, PS5</span>
                 </div>
             </div>
